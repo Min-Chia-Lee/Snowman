@@ -1,0 +1,662 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
+/*   border: solid 1px black; */
+}
+body{
+  background: #0e527a;
+  dispaly: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  margin: 0;
+}
+.body.top{
+  top: 100px;
+  position: absolute;
+  left: 500px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #f9fdff; 
+}
+.body.under{
+  top: 260px;
+  position: absolute;
+  left: 450px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #f9fdff; 
+}
+.eye.left{
+  top: 160px;
+  position: absolute;
+  left: 560px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #111111; 
+}
+.eye.right{
+  top: 160px;
+  position: absolute;
+  left: 620px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #111111; 
+}
+.nose{
+  width: 0;
+  height: 0;
+  top: 160px;
+  position: absolute;
+  left: 580px;
+  background: transparent;
+  border-bottom: 60px solid orange;
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent;
+  box-shadow: inset 30px 0 20px rgba(0,0,0,0.1);
+/*   transform: rotate(180deg) */
+}
+.button.top{
+  top: 350px;
+  position: absolute;
+  left: 590px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #fc0000;
+}
+.button.under{
+  top: 410px;
+  position: absolute;
+  left: 590px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #fc0000; 
+}
+.scarf {
+  position: absolute;
+  width: 200px;
+  height: 48px;
+  background: #07f9d1;
+  border-radius: 50px;
+  top: 250px;
+  left: 500px;
+  box-shadow: inset 30px 0 20px rgba(0,0,0,0.1);
+}
+.scarf:before{
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  top: 30px;
+  left: 130px;
+  background: #07f9d1;
+  border-radius: 10px;
+  box-shadow: inset 0px 0 3px rgba(0,0,0,0.1);
+  transform: rotate(15deg);
+}
+.scarf:after{
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 110px;
+  top: 30px;
+  left: 160px;
+  background: #07f9d1;
+  border-radius: 10px;
+  box-shadow: inset 0px 0 5px rgba(0,0,0,0.1);
+  transform: rotate(350deg);
+}
+.snowflake1{
+  top: 150px;
+  position: absolute;
+  left: 150px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #f9fdff;
+}
+.snowflake2{
+  top: 300px;
+  position: absolute;
+  left: 320px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #f9fdff;
+}
+.snowflake3{
+  top: 80px;
+  position: absolute;
+  left: 1000px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #f9fdff;
+}
+.snowflake4{
+  top: 450px;
+  position: absolute;
+  left: 850px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #f9fdff;
+}
+.snowflake5{
+  top: 525px;
+  position: absolute;
+  left: 210px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #f9fdff;
+}
+.snowflake6{
+  top: 250px;
+  position: absolute;
+  left: 780px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #f9fdff;
+}
+.snowflake7{
+  top: 330px;
+  position: absolute;
+  left: 1060px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #f9fdff;
+}
+.snowflake8{
+  top: 400px;
+  position: absolute;
+  left: 40px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #f9fdff;
+}
+.snowflake9{
+  top: 30px;
+  position: absolute;
+  left: 360px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #f9fdff;
+}
+.snowflake10{
+  top: 45px;
+  position: absolute;
+  left: 660px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #f9fdff;
+}
+.snowflake11{
+  top: 545px;
+  position: absolute;
+  left: 1150px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #f9fdff;
+}
+.snowman{
+  animation-name: snowmanmove;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes snowmanmove{
+  0%{
+    transform:rotate(10deg);
+  }
+  25%{
+    transform:rotate(-10deg); 
+  }
+  50%{
+    transform:rotate(10deg);
+  }
+  75%{
+    transform:rotate(-10deg); 
+  }
+  100%{
+    transform: rotate(10deg);
+  }
+}
+.snowflake1{
+  animation-name: snowflakemove1;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes snowflakemove1{
+  0%{
+    top: 150px;
+  }
+  25%{
+    top: 200px;
+  }
+  50%{
+    top: 250px;
+  }
+  75%{
+    top: 300px;
+  }
+  100%{
+    top: 350px;
+  }
+/*   62.5%{
+    top: 400px;
+  }
+  75%{
+    top: 450px;
+  }
+  87.5%{
+    top: 500px;
+  }
+  100%{
+    top: 550px;
+  } */
+}
+.snowflake2{
+  animation-name: snowflakemove2;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes snowflakemove2{
+  0%{
+    top: 300px;
+  }
+  25%{
+    top: 330px;
+  }
+  50%{
+    top: 360px;
+  }
+  75%{
+    top: 390px;
+  }
+  100%{
+    top: 420px;
+  }
+/*   62.5%{
+    top: 450px;
+  }
+  75%{
+    top: 480px;
+  }
+  87.5%{
+    top: 510px;
+  }
+  100%{
+    top: 540px;
+  } */
+}
+.snowflake3{
+  animation-name: snowflakemove3;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes snowflakemove3{
+  0%{
+    top: 80px;
+  }
+  25%{
+    top: 120px;
+  }
+  50%{
+    top: 160px;
+  }
+  75%{
+    top: 200px;
+  }
+  100%{
+    top: 240px;
+  }
+/*   62.5%{
+    top: 280px;
+  }
+  75%{
+    top: 320px;
+  }
+  87.5%{
+    top: 360px;
+  }
+  100%{
+    top: 400px;
+  } */
+}
+.snowflake4{
+  animation-name: snowflakemove4;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes snowflakemove4{
+  0%{
+    top: 450px;
+  }
+  25%{
+    top: 470px;
+  }
+  50%{
+    top: 490px;
+  }
+  75%{
+    top: 510px;
+  }
+  100%{
+    top: 530px;
+  }
+/*   62.5%{
+    top: 550px;
+  }
+  75%{
+    top: 570px;
+  }
+  87.5%{
+    top: 590px;
+  }
+  100%{
+    top: 610px;
+  } */
+}
+.snowflake5{
+  animation-name: snowflakemove5;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes snowflakemove5{
+  0%{
+    top: 525px;
+  }
+  25%{
+    top: 540px;
+  }
+  50%{
+    top: 555px;
+  }
+  75%{
+    top: 570px;
+  }
+  100%{
+    top: 585px;
+  }
+/*   62.5%{
+    top: 600px;
+  }
+  75%{
+    top: 615px;
+  }
+  87.5%{
+    top: 630px;
+  }
+  100%{
+    top: 645px;
+  } */
+}
+.snowflake6{
+  animation-name: snowflakemove6;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes snowflakemove6{
+  0%{
+    top: 250px;
+  }
+  25%{
+    top: 275px;
+  }
+  50%{
+    top: 300px;
+  }
+  75%{
+    top: 325px;
+  }
+  100%{
+    top: 350px;
+  }
+/*   62.5%{
+    top: 375px;
+  }
+  75%{
+    top: 400px;
+  }
+  87.5%{
+    top: 425px;
+  }
+  100%{
+    top: 450px;
+  } */
+}
+.snowflake7{
+  animation-name: snowflakemove7;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes snowflakemove7{
+  0%{
+    top: 330px;
+  }
+  25%{
+    top: 345px;
+  }
+  50%{
+    top: 360px;
+  }
+  75%{
+    top: 375px;
+  }
+  100%{
+    top: 390px;
+  }
+/*   62.5%{
+    top: 405px;
+  }
+  75%{
+    top: 420px;
+  }
+  87.5%{
+    top: 435px;
+  }
+  100%{
+    top: 450px;
+  } */
+}
+.snowflake8{
+  animation-name: snowflakemove8;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes snowflakemove8{
+  0%{
+    top: 400px;
+  }
+  25%{
+    top: 420px;
+  }
+  50%{
+    top: 430px;
+  }
+  75%{
+    top: 450px;
+  }
+  100%{
+    top: 460px;
+  }
+/*   62.5%{
+    top: 480px;
+  }
+  75%{
+    top: 490px;
+  }
+  87.5%{
+    top: 510px;
+  }
+  100%{
+    top: 530px;
+  } */
+}
+.snowflake9{
+  animation-name: snowflakemove9;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes snowflakemove9{
+  0%{
+    top: 30px;
+  }
+  25%{
+    top: 70px;
+  }
+  50%{
+    top: 110px;
+  }
+  75%{
+    top: 150px;
+  }
+  100%{
+    top: 190px;
+  }
+/*   62.5%{
+    top: 230px;
+  }
+  75%{
+    top: 270px;
+  }
+  87.5%{
+    top: 310px;
+  }
+  100%{
+    top: 350px;
+  } */
+}
+.snowflake10{
+  animation-name: snowflakemove10;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes snowflakemove10{
+  0%{
+    top: 45px;
+  }
+  25%{
+    top: 90px;
+  }
+  50%{
+    top: 135px;
+  }
+  75%{
+    top: 180px;
+  }
+  100%{
+    top: 225px;
+  }
+/*   62.5%{
+    top: 270px;
+  }
+  75%{
+    top: 315px;
+  }
+  87.5%{
+    top: 360px;
+  }
+  100%{
+    top: 405px;
+  } */
+}
+.snowflake11{
+  animation-name: snowflakemove11;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes snowflakemove11{
+  0%{
+    top: 545px;
+  }
+  25%{
+    top: 555px;
+  }
+  50%{
+    top: 565px;
+  }
+  75%{
+    top: 575px;
+  }
+  100%{
+    top: 585px;
+  }
+/*   62.5%{
+    top: 595px;
+  }
+  75%{
+    top: 605px;
+  }
+  87.5%{
+    top: 615px;
+  }
+  100%{
+    top: 625px;
+  } */
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+h1{
+  font-family: 'Lato', sans-serif;
+  font-size: 60px;
+  position: flex;
+}
+.word{
+  position:relative;
+  width: 350px;
+  height: 100px;
+  animation-name: wordmove;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes wordmove{
+  0%{
+    left: 100px;
+    top: 10px; 
+  }
+  25%{
+    left: 300px;
+    top: 20px;
+  }
+  50%{
+    left: 500px;
+    top: 10px;
+  }
+  75%{
+    left: 750px;
+    top: 30px;
+  }
+  100%{
+    left: 1000px;
+    top: 60px;
+  }
+}
